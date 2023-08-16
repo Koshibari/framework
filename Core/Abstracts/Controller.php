@@ -3,8 +3,8 @@
 namespace Koshiba\Framework\Core\Abstracts;
 
 use JetBrains\PhpStorm\ArrayShape;
-use Koshiba\Core\Http\Request;
-use Koshiba\Libs\Static\Helper;
+use Koshiba\Framework\Core\Http\Request;
+use Koshiba\Framework\Libs\Static\Helper;
 use Koshiba\Framework\Core\Registry\Registry;
 
 abstract class Controller {

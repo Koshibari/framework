@@ -3,7 +3,7 @@
 namespace Koshiba\Framework\Core\Abstracts;
 
 use JetBrains\PhpStorm\ArrayShape;
-use Koshiba\Libs\Static\Helper;
+use Koshiba\Framework\Libs\Static\Helper;
 
 class View {
 	/**
