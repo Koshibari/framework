@@ -1,8 +1,8 @@
 <?php
 
-namespace Koshiba\Core\Http;
+namespace Koshiba\Framework\Core\Http;
 
-use Koshiba\Libs\Static\Helper;
+use Koshiba\Framework\Libs\Static\Helper;
 
 class Response {
 

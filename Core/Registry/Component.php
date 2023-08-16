@@ -2,7 +2,7 @@
 
 namespace Koshiba\Framework\Core\Registry;
 
-use Koshiba\Core\Abstracts\Singletone;
+use Koshiba\Framework\Core\Abstracts\Singletone;
 
 trait Component {
 	use Singletone;

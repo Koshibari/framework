@@ -2,8 +2,8 @@
 
 namespace Koshiba\Framework\Core;
 
-use Koshiba\Core\Handlers\ErrorHandler;
-use Koshiba\Core\Registry\Registry;
+use Koshiba\Framework\Core\Handlers\ErrorHandler;
+use Koshiba\Framework\Core\Registry\Registry;
 
 class App {
 	public static Registry $registry;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Koshiba\Core\Http;
+namespace Koshiba\Framework\Core\Http;
 
 class Request {
 	public function __construct(public readonly array $getParams, public readonly array $postParams, public readonly array $cookies, public readonly array $files, public readonly array $server) {

@@ -3,7 +3,7 @@
 namespace Koshiba\Framework\Core\Http;
 
 use Exception;
-use Koshiba\Core\Abstracts\Controller;
+use Koshiba\Framework\Core\Abstracts\Controller;
 use Koshiba\Framework\Core\Router;
 use ReflectionMethod;
 

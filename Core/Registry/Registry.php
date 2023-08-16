@@ -2,8 +2,8 @@
 
 namespace Koshiba\Framework\Core\Registry;
 
-use Koshiba\Core\Abstracts\Singletone;
-use Koshiba\Libs\Static\Helper;
+use Koshiba\Framework\Core\Abstracts\Singletone;
+use Koshiba\Framework\Libs\Static\Helper;
 
 class Registry {
 	use Singletone;

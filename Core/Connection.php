@@ -2,9 +2,9 @@
 
 namespace Koshiba\Framework\Core;
 
-use Koshiba\Core\Abstracts\Singletone;
-use Koshiba\Core\Config\Config;
-use Koshiba\Libs\Static\Helper;
+use Koshiba\Framework\Core\Abstracts\Singletone;
+use Koshiba\Framework\Core\Config\Config;
+use Koshiba\Framework\Libs\Static\Helper;
 use PDO;
 use R;
 
