@@ -1,0 +1,11 @@
+{
+  "params": {
+    "template": "any:str",
+    "container": [
+      "ul",
+      "select"
+    ],
+    "table": "any:str",
+    "cache": "any:int?"
+  }
+}

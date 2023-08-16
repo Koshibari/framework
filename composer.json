@@ -1,0 +1,20 @@
+{
+  "name": "koshiba/framework",
+  "description": "Pal framework",
+  "keywords": ["framework", "php"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Koshiba",
+      "email": "archano@yandex.ru"
+    }
+  ],
+  "require": {
+    "vlucas/valitron": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Koshiba\\Framework\\": ""
+    }
+  }
+}

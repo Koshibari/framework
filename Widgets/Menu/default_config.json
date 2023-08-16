@@ -1,0 +1,6 @@
+{
+  "template": "menu",
+  "container": "ul",
+  "table": "categories",
+  "cache": 3600
+}
