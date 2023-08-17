@@ -1,7 +1,7 @@
 <?php
 
-use Koshiba\Core\Abstracts\Widget;
-use Koshiba\Libs\Static\DataUtils;
+use Koshiba\Framework\Core\Abstracts\Widget;
+use Koshiba\Framework\Libs\Static\DataUtils;
 
 function dd($data, bool|int $strict = false, bool $return = false, string $annotate = ''): ?string {
 	if (empty($data)) {
@@ -33,12 +33,10 @@ function path(string $location, string $module = null): string {
 	$location = strtolower($location);
 	$module   = in_array($module, getModules()) ? MODULE . DS . $module : APP;
 	return match ($location) {
-		'web' => WEB,
-		'app' => APP,
-		'vendor' => VENDOR,
-		'libs' => VENDOR . DS . 'Libs',
-		'core' => VENDOR . DS . 'Core',
-		'widgets' => VENDOR . DS . "Widgets",
+		'vendor' => ROOT,
+		'libs' => LIBS,
+		'core' => CORE,
+		'widgets' => WIDGETS,
 		'controller' => $module . DS . 'Controllers',
 		'model' => $module . DS . 'Models',
 		'view' => $module . DS . 'Views',
@@ -85,7 +83,7 @@ function getWidgetNamespace(string $widgetName): string {
 function widgetReal(string $widgetName): bool {
 	$namespace = getWidgetNamespace($widgetName);
 
-	$widget = scandir(functions . phppath('widgets') . $widgetName);
+	$widget = scandir(path('widgets') . DS . $widgetName);
 	if (!in_array(Koshiba::WIDGET_DEFAULT_CONFIG->value . Koshiba::WIDGET_CONFIG_EXT->value, $widget))
 		return false;
 	if (!in_array(Koshiba::WIDGET_CONFIG->value . Koshiba::WIDGET_CONFIG_EXT->value, $widget))
